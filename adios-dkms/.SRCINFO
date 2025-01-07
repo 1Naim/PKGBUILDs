@@ -1,0 +1,12 @@
+pkgbase = adios-dkms
+	pkgdesc = ADIOS is a multi-queue I/O scheduler with learning-based adaptive latency control.
+	pkgver = 0.3.0
+	pkgrel = 1
+	url = https://github.com/1Naim/adios
+	arch = x86_64
+	license = GPL-2.0-only
+	depends = dkms
+	source = git+https://github.com/1Naim/adios#tag=0.3.0
+	sha256sums = 98e26474869d9900d4d145b649f2a390f7598a3520ba3e100a91cc09c69665a8
+
+pkgname = adios-dkms
