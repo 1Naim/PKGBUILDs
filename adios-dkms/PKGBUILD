@@ -2,8 +2,8 @@
 
 _pkgname=adios
 pkgname=adios-dkms
-pkgver=0.3.0
-pkgrel=3
+pkgver=0.5.0
+pkgrel=1
 pkgdesc="ADIOS is a multi-queue I/O scheduler with learning-based adaptive latency control."
 arch=('x86_64')
 url="https://github.com/1Naim/adios"
@@ -11,13 +11,8 @@ license=('GPL-2.0-only')
 depends=('dkms')
 source=("git+${url}#tag=${pkgver}"
         "adios.conf")
-sha256sums=('98e26474869d9900d4d145b649f2a390f7598a3520ba3e100a91cc09c69665a8'
+sha256sums=('7a6b0e2cc7b7b76ed47849ac441a4b45cef5fa871e948c8682d72c6e2e4402ad'
             '3000dfe470d85e4b32dc78f083da866f24d6183c48d83b42b36da98e64701ade')
-
-prepare() {
-    cd ${_pkgname}
-    git revert -n 553087ae9491af1caf0be727748df703dabc7551
-}
 
 package() {
     cd ${_pkgname}
