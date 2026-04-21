@@ -1,0 +1,3 @@
+[submodule "niri-focused-booster"]
+	path = niri-focused-booster
+	url = https://aur.archlinux.org/niri-focused-booster.git
